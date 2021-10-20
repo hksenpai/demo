@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Book Store</h1>
+    </nav>
+    <div>
+      <form id="storeForm">
+        <div>
+          <label for="name">Name :</label>
+          <input name="name" placeholder="Enter book name" id="name" />
+        </div>
+        <div>
+          <label for="authorName">Author Name :</label>
+          <input
+            name="authorName"
+            placeholder="Enter author name"
+            id="authorName"
+          />
+        </div>
+        <div>
+          <label for="programming">Programming</label>
+          <input
+            name="type"
+            type="radio"
+            value="programming"
+            id="programming"
+          />
+        </div>
+        <div>
+          <label for="sci_fi">Sci-fi</label>
+          <input name="type" type="radio" value="sci-fi" id="sci_fi" />
+        </div>
+        <div>
+          <label for="thriller">Thriller</label>
+          <input name="type" type="radio" value="thriller" id="thriller" />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Author Name</th>
+            <th>Type</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tablecontent"></tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
